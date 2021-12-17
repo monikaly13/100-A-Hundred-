@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/heading.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/image.css">
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+}
+  #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a::before{
+  overflow: hidden
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+<body>
+    <header class="navbar">
+        <img src="../Image/100logopng.png" width="90px">
+        <a href="../HTML/index.html">HOME</a>
+        <a href="../HTML/about.html">ABOUT</a>
+        <a href="../HTML/signup.html">SIGN UP</a>
+        <div class="dropdown">
+          <button class="dropbtn">CATEGORY 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="header">
+              <h2>100 things you need to know about</h2>
+            </div>   
+            <div class="row">
+              <div class="column">
+                <h3>Science</h3>
+                <a href="https://en.wikipedia.org/wiki/Moon_landing">Moon Landing</a>
+                <a href="https://www.visiblebody.com/learn/reproductive/reproductive-process#:~:text=The%20vagina%20carries%20the%20female%27s%20menstrual%20flow%20outside,these%20cells%20join%20as%20the%20egg%20is%20fertilized.">Reproduction and Development Process</a>
+                <a href="https://teslasciencecenter.org/nikola-tesla-inventions/">Nikola Tesla Inventions</a>
+              </div>
+              <div class="column">
+                <h3>Social</h3>
+                <a href="https://www.indeed.com/career-advice/resumes-cover-letters/soft-skills#:~:text=Top%20soft%20skills%20with%20examples%201%20Communication.%20Effective,...%204%20Adaptability.%20...%205%20Work%20ethic.%20">Soft Skill Development</a>
+                <a href="https://resumegenius.com/blog/resume-help/hard-skills">Hard Skill Development</a>
+                <a href="https://www.verywellmind.com/quick-facts-about-social-psychology-2795914">Social Psychology</a>
+              </div>
+              <div class="column">
+                <h3>General Knowledge</h3>
+                <a href="https://www.weforum.org/agenda/2016/05/7-surprising-things-about-asean/">ASEAN</a>
+                <a href="https://targetstudy.com/articles/importance-of-general-knowledge-in-life.html">Importance of General Knowledge</a>
+                <a href="https://en.wikipedia.org/wiki/World_War_I">World War I</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </header>
+    <section>
+        <h1 class="text1">The secret has been discovered</h1>
+        <div class="bg-image img1"></div>
+
+        <div class="bg-text">Where you learn, not just history but fact.</div>
+    </section>
+    <div id="sec2">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="../HTML/about.html">About Us</a></li>
+                        <li><a href="#">Our service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CATEGORY</h4>
+                    <ul>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">General Knowledge</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				    <a href="#"><i class="fab fa-twitter"></i></a>
+  	 				    <a href="#"><i class="fab fa-instagram"></i></a>
+  	 				    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

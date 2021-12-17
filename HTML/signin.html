@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../CSS/heading.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+<style>
+    /* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+    width: 35%;
+    margin-left: 32%;   
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #047baa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}   
+</style>
+<body>
+    <header class="navbar">
+        <img src="../Image/100logopng.png" width="90px">
+        <a href="../HTML/index.html">HOME</a>
+        <a href="../HTML/about.html">ABOUT</a>
+        <a href="../HTML/signup.html">SIGN UP</a>
+        <div class="dropdown">
+          <button class="dropbtn">CATEGORY 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="header">
+              <h2>100 things you need to know about</h2>
+            </div>   
+            <div class="row">
+              <div class="column">
+                <h3>Science</h3>
+                <a href="https://en.wikipedia.org/wiki/Moon_landing">Moon Landing</a>
+                <a href="https://www.visiblebody.com/learn/reproductive/reproductive-process#:~:text=The%20vagina%20carries%20the%20female%27s%20menstrual%20flow%20outside,these%20cells%20join%20as%20the%20egg%20is%20fertilized.">Reproduction and Development Process</a>
+                <a href="https://teslasciencecenter.org/nikola-tesla-inventions/">Nikola Tesla Inventions</a>
+              </div>
+              <div class="column">
+                <h3>Social</h3>
+                <a href="https://www.indeed.com/career-advice/resumes-cover-letters/soft-skills#:~:text=Top%20soft%20skills%20with%20examples%201%20Communication.%20Effective,...%204%20Adaptability.%20...%205%20Work%20ethic.%20">Soft Skill Development</a>
+                <a href="https://resumegenius.com/blog/resume-help/hard-skills">Hard Skill Development</a>
+                <a href="https://www.verywellmind.com/quick-facts-about-social-psychology-2795914">Social Psychology</a>
+              </div>
+              <div class="column">
+                <h3>General Knowledge</h3>
+                <a href="https://www.weforum.org/agenda/2016/05/7-surprising-things-about-asean/">ASEAN</a>
+                <a href="https://targetstudy.com/articles/importance-of-general-knowledge-in-life.html">Importance of General Knowledge</a>
+                <a href="https://en.wikipedia.org/wiki/World_War_I">World War I</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </header>
+    <form action="action_page.php" method="post">
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="../HTML/about.html">About Us</a></li>
+                        <li><a href="#">Our service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CATEGORY</h4>
+                    <ul>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">General Knowledge</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				    <a href="#"><i class="fab fa-twitter"></i></a>
+  	 				    <a href="#"><i class="fab fa-instagram"></i></a>
+  	 				    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

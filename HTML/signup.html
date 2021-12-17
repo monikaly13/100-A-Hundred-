@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up</title>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/heading.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+.form{
+    width: 35%;
+    margin-left: 32%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #047baa;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header class="navbar">
+    <img src="../Image/100logopng.png" width="90px">
+    <a href="../HTML/index.html">HOME</a>
+    <a href="../HTML/about.html">ABOUT</a>
+    <a href="../HTML/signup.html">SIGN UP</a>
+    <div class="dropdown">
+      <button class="dropbtn">CATEGORY 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="header">
+          <h2>100 things you need to know about</h2>
+        </div>   
+        <div class="row">
+          <div class="column">
+            <h3>Science</h3>
+            <a href="https://en.wikipedia.org/wiki/Moon_landing">Moon Landing</a>
+            <a href="https://www.visiblebody.com/learn/reproductive/reproductive-process#:~:text=The%20vagina%20carries%20the%20female%27s%20menstrual%20flow%20outside,these%20cells%20join%20as%20the%20egg%20is%20fertilized.">Reproduction and Development Process</a>
+            <a href="https://teslasciencecenter.org/nikola-tesla-inventions/">Nikola Tesla Inventions</a>
+          </div>
+          <div class="column">
+            <h3>Social</h3>
+            <a href="https://www.indeed.com/career-advice/resumes-cover-letters/soft-skills#:~:text=Top%20soft%20skills%20with%20examples%201%20Communication.%20Effective,...%204%20Adaptability.%20...%205%20Work%20ethic.%20">Soft Skill Development</a>
+            <a href="https://resumegenius.com/blog/resume-help/hard-skills">Hard Skill Development</a>
+            <a href="https://www.verywellmind.com/quick-facts-about-social-psychology-2795914">Social Psychology</a>
+          </div>
+          <div class="column">
+            <h3>General Knowledge</h3>
+            <a href="https://www.weforum.org/agenda/2016/05/7-surprising-things-about-asean/">ASEAN</a>
+            <a href="https://targetstudy.com/articles/importance-of-general-knowledge-in-life.html">Importance of General Knowledge</a>
+            <a href="https://en.wikipedia.org/wiki/World_War_I">World War I</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+</header>
+<form action="/action_page.php" class="form">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="../HTML/signin.html">Sign in</a>.</p>
+  </div>
+</form>
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>COMPANY</h4>
+              <ul>
+                  <li><a href="../HTML/about.html">About Us</a></li>
+                  <li><a href="#">Our service</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>HELP</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>CATEGORY</h4>
+              <ul>
+                  <li><a href="#">Science</a></li>
+                  <li><a href="#">Social</a></li>
+                  <li><a href="#">General Knowledge</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>FOLLOW US</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
